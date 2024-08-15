@@ -8,8 +8,8 @@ h1 {
     text-shadow: 
         -1px -1px 0 #000000,  
         1px -1px 0 #000000,
-        -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff;
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
     
 }
 h2 {
@@ -35,7 +35,8 @@ th, td {
 }
 th {
     background-color: #0046c9;
-    font-size: 23px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
 }
 .rankings {
     column-count: 3;
