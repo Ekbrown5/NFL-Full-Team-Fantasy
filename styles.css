@@ -54,6 +54,7 @@ th {
     column-count: 3;
     column-gap: 5px;
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -69,16 +70,18 @@ th {
 
 }
 
-ul{
+ul {
     list-style: none;
-    background: purple;
+    background: rgb(105, 0, 105);
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
-display: inline-block;
-position: relative;
-margin: 0;
-padding: 0;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 ul li a {
@@ -90,24 +93,21 @@ ul li a {
     font-size: 20px;
 }
 
-ul li ul.dropdown li {
-    display: block;
-}
-
 ul li ul.dropdown {
-    width: 100%;
     background: purple;
     position: absolute;
-    z-index: 999;
-    display: none;
     top: 100%;
     left: 0;
+    width: 100%;
+    z-index: 999;
+    display: none;
     margin: 0;
     padding: 0;
 }
 
-ul li a:hover {
-    background: rgb(181, 0, 187)
+ul li ul.dropdown li {
+    display: block;
+    margin: 0;
 }
 
 ul li:hover ul.dropdown {
@@ -115,9 +115,57 @@ ul li:hover ul.dropdown {
 }
 
 li {
-    display: inline-block;
     margin-left: 10px;
-    font-size:18px;
+    font-size: 18px;
     font-weight: bold;
-    color:white;
+    color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    /* Make the menu vertical and add toggle button */
+    ul {
+        display: none; /* Hide by default, will be toggled with JS */
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 15px;
+        background: rgb(105, 0, 105);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    ul li {
+        display: block;
+        width: 100%;
+    }
+
+    ul li a {
+        padding: 15px;
+        text-align: left;
+    }
+
+    ul li ul.dropdown {
+        position: static;
+    }
+
+    ul li ul.dropdown li a {
+        padding-left: 40px;
+    }
 }
