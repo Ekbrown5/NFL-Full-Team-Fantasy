@@ -21,11 +21,16 @@ h2 {
 }
 h3 {
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
+h4 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
 .team-logo {
-    width: 32px;
+    width: 50px;
     height: auto;
     vertical-align: middle;
 }
@@ -37,13 +42,13 @@ th, td {
     border: 2px solid rgb(255, 255, 255);
     padding: 15px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size:20px
 }
 th {
     background-color: #0046c9;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    font-size: 18px;
+    color: rgb(37, 0, 78);
 }
 .rankings {
     column-count: 3;
