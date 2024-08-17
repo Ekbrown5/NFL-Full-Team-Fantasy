@@ -20,7 +20,7 @@ h2 {
     color: white;
 }
 h3 {
-    font-size: 20px;
+    font-size: 10px;
     color: rgb(255, 255, 255);
 
 }
@@ -44,12 +44,12 @@ th, td {
     padding: 15px;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size:20px;
+    font-size:15px;
     flex: 1;
 }
 th {
     background-color: #0059ff;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     flex: 1;
 }
@@ -68,6 +68,9 @@ ul {
     background: rgb(133, 0, 133);
     margin: 0;
     padding: 0;
+    width:40%;
+   
+    
 }
 
 ul li {
