@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('nav ul');
-
-    menuToggle.addEventListener('click', function() {
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-    });
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('ul').classList.toggle('open');
 });
+
+// Add this to your CSS for the open class
+ul.open {
+    display: block;
+}
