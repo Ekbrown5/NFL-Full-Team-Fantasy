@@ -147,6 +147,9 @@ li {
     padding: 30px;
 }
 
+ul.open {
+    display: block;
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
     h1 {

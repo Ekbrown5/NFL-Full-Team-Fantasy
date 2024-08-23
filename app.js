@@ -1,8 +1,6 @@
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('ul').classList.toggle('open');
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        const menu = document.querySelector('nav ul');
+        menu.classList.toggle('open');
+    });
 });
-
-// Add this to your CSS for the open class
-ul.open {
-    display: block;
-}
