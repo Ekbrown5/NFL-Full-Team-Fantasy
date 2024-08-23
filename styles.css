@@ -59,7 +59,7 @@ th, td {
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
 }
 
@@ -132,6 +132,7 @@ li {
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px;
+    gap: 20px; /* Add some gap between elements */
 }
 
 .side-text {
@@ -150,6 +151,47 @@ li {
 ul.open {
     display: block;
 }
+
+.user-table {
+    width: 60%;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    margin-right: 20px; /* Space between table and team list */
+
+}
+
+.user-table th, .user-table td {
+    border: 2px solid white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+.user-table th {
+    background-color: #0059ff;
+    color: black;
+}
+.nfl-team-list {
+    width: 35%;
+    background-color: rgb(0, 0, 43);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.nfl-team-list h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nfl-team-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     h1 {
