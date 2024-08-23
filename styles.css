@@ -256,4 +256,15 @@ ul.open {
     .content-box {
         width: 100%;
     }
+    .user-table, .nfl-team-list {
+        width: 100%;
+        margin: 0;
+    }
+    .user-table th, .user-table td {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .nfl-team-list h3 {
+        font-size: 1rem;
+    }
 }
