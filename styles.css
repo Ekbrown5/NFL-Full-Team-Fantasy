@@ -218,6 +218,9 @@ ul.open {
     ul {
         display: none;
     }
+    .header-background {
+        background-size: cover;
+    }
 
     .menu-toggle {
         display: block;
